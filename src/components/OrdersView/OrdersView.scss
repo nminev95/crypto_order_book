@@ -1,0 +1,42 @@
+@import "../../constants/variables.scss";
+
+.orders-view-wrapper {
+    border: 1px solid #EAECEF;
+    border-radius: 6px;
+    height: fit-content;
+    
+    .view-header {
+        padding: 40px 40px 0px 40px;
+        font-size: 24px;
+        color: $text-color
+    }
+
+    table {
+        padding: 40px 0px 40px 0px;
+
+        th {
+            text-align: left;
+            color: $secondary-text-color;
+            font-size: 14px;   
+            font-weight: normal;   
+            padding: 10px 40px;
+        }
+
+        tbody {
+            .single-order {
+                &.bids {
+                    color: rgb(14, 203, 129);
+                }
+
+                &.asks {
+                    color: rgb(246, 70, 93);
+                }
+            }
+
+            td {
+                min-width: 180px;
+                padding: 10px 40px;               
+            }
+        }
+     }
+}

@@ -1,0 +1,60 @@
+@import "../../constants/variables.scss";
+
+.order-book {
+    .order-book-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding: 15px 30px;
+
+        .additional-header-buttons {
+            display: flex;
+            gap: 30px;
+
+            .order-book-depth-selector {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .depth-label {
+                margin-bottom: 5px;
+                color: $secondary-text-color;
+                font-size: $text-size-s; 
+            }
+        }
+
+        .order-book-pair-info {
+            color: $text-color;
+            font-size: $text-size-l;
+        }
+    }
+    
+    .order-book-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin-top: 40px;
+    
+        .order-book-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            border-radius: 6px;
+            min-height: 40vh;
+            max-height: 70vh;
+            width: 100%;
+
+            .order-book-buttons {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .order-book-body {
+                display: flex;
+                gap: 80px;    
+            }
+        }
+    }
+}
